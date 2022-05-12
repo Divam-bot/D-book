@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+
+  <title>Social Media Dapp</title>
+  <meta name="viewport" content="height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Social media app made on etheruem blockchain" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <h2><mark>D</mark>Book</h2>
+      &nbsp
+      &nbsp
+      &nbsp
+      &nbsp
+      &nbsp
+      &nbsp
+      <ul>
+        <li><i class="fas fa-bell"></i></li>
+        <li><i class="fas fa-envelope"></i></li>
+        <li><i class="fas fa-address-book"></i></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="search">
+      </div>
+      <div class="user-icon-image">
+        <img id="cornerprofileimg" src="" alt="">
+      </div>
+    </div>
+  </nav>
+
+  <!-- loader and content show form here--->
+  <div id="loader">
+    <p class="text-center">Loading...</p>
+  </div>
+  <!----Conainer-->
+  <div class="container" id="content" style="display:none;">
+    <div class="left-sidebar">
+
+      <div class="card">
+        <img class="card-img-top card-img-cir" src="" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">
+            One day, I hope to be a happily married old man telling wild stories from his wild youth.
+          </p>
+          <hr>
+          <div class="card-details">
+            <p>total likes recieved: <span class="badge badge-success" id="displaylike">15</span></p>
+            <p>Reputation score: <span class="badge badge-success" id="displayrep">0.7</span></p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!----main-content------>
+    <div class="main-content">
+      <div class="story-gallery">
+        <div class="story story-0">
+          <img src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <p>Post story</p>
+        </div>
+        <div class="story story-1">
+          <img src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q=" alt="">
+          <p>Vikash Singh</p>
+        </div>
+        <div class="story story-2">
+          <img src="https://media.istockphoto.com/photos/cute-little-african-american-girl-looking-at-camera-picture-id1353379172?b=1&k=20&m=1353379172&s=170667a&w=0&h=ATdapJAP1vVUkk67vcgxlV-Lg4LuXJNSP8N6awcStSo=" alt="">
+          <p>Abhishek kumar</p>
+        </div>
+        <div class="story story-3">
+          <img src="https://media.gettyimages.com/photos/you-make-me-happy-picture-id1178823473?s=612x612" alt="">
+          <p>Akash Singh</p>
+        </div>
+        <div class="story story-4">
+          <img src="https://media.istockphoto.com/photos/full-length-shot-of-a-young-girl-sitting-in-the-hallway-at-school-and-picture-id1339040561?b=1&k=20&m=1339040561&s=170667a&w=0&h=cBIeSrYiP7lcIohC3aLHOYCH1X1nTG3wk4xTqn7eI74=" alt="">
+          <p>Jeet Singh</p>
+        </div>
+      </div>
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img id="addpostprofileimg" src="https://media.gettyimages.com/photos/you-make-me-happy-picture-id1178823473?s=612x612" alt="">
+          <div>
+            <p id="addpostprofilename">Abhishek Kumar</p>
+            <small>Public</small>
+          </div>
+        </div>
+        <div class="post-input-container">
+          <textarea name="" id="postcontent" rows="3" placeholder="What's on your mind...">
+</textarea>
+          <div class="add-post-links">
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9sr9dttWK_lLIJvmTufooeHtcT52xK3TAzaaIuu7NzzKgZvYKqxzI09WXktqpYYmA7pY&usqp=CAU" alt="">Live Video</a>
+            <a href="" data-toggle="modal" data-target="#Modal1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuvafpok1f34VfmtLMX_0RYNYnJ-aSpv0qQ&usqp=CAU" alt="">Photo/video</a>
+            <a href=""><img src="https://image.shutterstock.com/image-vector/emoji-lol-laugh-face-vector-260nw-1187487424.jpg" alt="">Feeling/Activity</a>
+          </div>
+          <div class="modal" id="Modal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Upload image for the post...</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <input type="text" id="postimagesrc" value="" placeholder="Enter image url">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button id="postsubmit" type="submit" class="btn btn-outline-primary">submit</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!---    <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="https://media.gettyimages.com/photos/you-make-me-happy-picture-id1178823473?s=612x612" alt="">
+            <div>
+              <p>Abhishek Kumar</p>
+              <span>June 24 2021, 13:40:38pm</span>
+            </div>
+          </div>
+        </div>
+        <p class="post-text">Subscribe <mark><b>Arya Web Developer</b>
+          </mark>YouTube Channel to watch more
+          video on website web development <a href="">#Youtube channel</a>
+        <p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJSFvewBphCd0-gaP5jDukdNiNsEaaiOnYA&usqp=CAU" class="post-img" alt="">
+        <div class="post-row">
+          <div class="activity-icon">
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73easIaEFFA2qSgS_1G8wdoLh3C8GKviB7g&usqp=CAU" alt="">102
+            </div>
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7FB3bvG4dQAayl85GSImFIk4JXQENosN3g&usqp=CAU" alt="">40
+            </div>
+
+            <div class="post-profile-icon">
+              <button type="button" class="btn btn-outline-danger btn-sm">report !</button>
+            </div>
+          </div>
+        </div>
+      </div>      --->
+
+
+
+    </div>
+    <!-----------Right Sidebar ---------->
+    <div class="right-sidebar">
+
+      <div class="sidebar-title">
+        <h4>Accounts</h4>
+      </div>
+
+      <div class="events">
+        <div class="left-event">
+          <h4 id="balance"></h4>
+          <span>Ethers</span>
+        </div>
+        <div class="right-event">
+          <h4>Account balance</h4>
+          <span>of account address: </span>
+          <span id="accountAddress"></span>
+        </div>
+      </div>
+
+
+      <hr>
+      <br>
+
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="">Close</a>
+      </div>
+      <img src="https://media.istockphoto.com/photos/digital-marketing-concept-online-advertisement-picture-id1284549946?k=20&m=1284549946&s=612x612&w=0&h=VVGNI_vARpvpqo2Md_xsfcSiotjVVjzisV75dF15T-0=" class="sidebar-ads" alt="">
+
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; Copyright 2021 DBook: All RIght Reserved</p>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- for font awesome icon toolkit--->
+  <script src="https://kit.fontawesome.com/c8b69f64eb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
